@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>CRUD Application</title>
+</head>
+
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 b-5">
+                <strong>My First CRUD</strong>
+            </h1>
+        </div>
+        <div class="main justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 mb-3">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Alex">
+                </div>
+                <div class="col-10 mb-3">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="John">
+                </div>
+                <div class="col-10 mb-3">
+                    <label for="phNum">Phone Number</label>
+                    <input type="text" class="form-control" id="phNum" placeholder="+123456789">
+                </div>
+                <div class="col-10 mb-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="example@gmail.com">
+                </div>
+                <div class="col-10">
+                    <input class="btn btn-success add-btn" type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="col-11 mt-5 w-100 ">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <tr>
+                            <td>Alex</td>
+                            <td>John</td>
+                            <td>+123456789</td>
+                            <td>example@gmail.com</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
